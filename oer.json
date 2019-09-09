@@ -178,6 +178,7 @@
           },
           "educationalRole": {
             "type": "object",
+            "_widget": "SkohubLookup",
             "properties": {
               "type": {
                 "type": "string",
@@ -208,6 +209,7 @@
     "interactivityType": {
       "type": "object",
       "title": "Interaktivitätsart",
+      "_widget": "SkohubLookup",
       "properties": {
         "type": {
           "type": "string",
