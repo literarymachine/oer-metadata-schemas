@@ -103,6 +103,7 @@
     "educationalLevel": {
       "title": "Bildungsstufe",
       "type": "object",
+      "_widget": "SkohubLookup",
       "properties": {
         "type": {
           "type": "string",
@@ -120,7 +121,7 @@
             "id": {
               "type": "string",
               "enum": [
-                "https://oerworldmap.org/assets/json/sectors.json"
+                "https://oerworldmap.org/assets/json/sectors/"
               ]
             }
           }
@@ -130,6 +131,7 @@
     "license": {
       "title": "Lizenz",
       "type": "object",
+      "_widget": "SkohubLookup",
       "properties": {
         "type": {
           "type": "string",
@@ -147,7 +149,7 @@
             "id": {
               "type": "string",
               "enum": [
-                "https://oerworldmap.org/assets/json/licenses.json"
+                "https://oerworldmap.org/assets/json/licenses/"
               ]
             }
           }
