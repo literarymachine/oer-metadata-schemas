@@ -100,14 +100,14 @@
               }
             }
           }
-      },
-      "required":  [
-        "inScheme",
-        "id",
-        "type"
-      ]
-    },
-      "_widget": "SkohubLookup"
+        },
+        "required":  [
+          "inScheme",
+          "id",
+          "type"
+        ],
+        "_widget": "SkohubLookup"
+      }
     },
     "educationalLevel": {
       "title": "Educational Level",
