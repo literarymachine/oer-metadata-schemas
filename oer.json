@@ -92,7 +92,7 @@
             "id": {
               "type": "string",
               "enum": [
-                "http://w3id.org/class/hochschulfaecher/scheme#"
+                "https://w3id.org/class/esc/scheme"
               ]
             }
           }
