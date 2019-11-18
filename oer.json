@@ -20,22 +20,23 @@
       "format": "uri"
     },
     "type": {
-      "title": "Typ",
+      "title": "Type",
       "type": "string",
       "enum": [
         "CreativeWork",
         "VideoObject",
         "AudioObject",
         "DataDownload",
-        "ImageObject"
+        "ImageObject",
+        "PresentationDigitalDocument"
       ]
     },
     "name": {
-      "title": "Titel",
+      "title": "Title",
       "type": "string"
     },
     "creator": {
-      "title": "Author(en)",
+      "title": "Creator(s)",
       "type": "array",
       "items": {
         "type": "object",
@@ -66,14 +67,14 @@
       }
     },
     "description": {
-      "title": "Beschreibung",
+      "title": "Description",
       "type": "string",
       "_display": {
         "rows": 5
       }
     },
-    "educationalSubject": {
-      "title": "Fach",
+    "about": {
+      "title": "Subject",
       "type": "object",
       "properties": {
         "type": {
@@ -101,7 +102,7 @@
       "_widget": "SkohubLookup"
     },
     "educationalLevel": {
-      "title": "Bildungsstufe",
+      "title": "Educational Level",
       "type": "object",
       "_widget": "SkohubLookup",
       "properties": {
@@ -129,7 +130,7 @@
       }
     },
     "license": {
-      "title": "Lizenz",
+      "title": "License",
       "type": "object",
       "_widget": "SkohubLookup",
       "properties": {
@@ -156,85 +157,10 @@
         }
       }
     },
-    "datePublished": {
-      "title": "Publikationsdatum",
+    "image": {
+      "title": "Image",
       "type": "string",
-      "format": "date"
-    },
-    "timeRequired": {
-      "title": "Zeitaufwand",
-      "type": "string",
-      "format": "date"
-    },
-    "audience": {
-      "title": "Zielpublikum",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": [
-              "EducationalAudience"
-            ]
-          },
-          "educationalRole": {
-            "type": "object",
-            "_widget": "SkohubLookup",
-            "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "Concept"
-                ]
-              },
-              "id": {
-                "type": "string",
-                "format": "uri"
-              },
-              "inScheme": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "string",
-                    "enum": [
-                      "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/"
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "interactivityType": {
-      "type": "object",
-      "title": "Interaktivitätsart",
-      "_widget": "SkohubLookup",
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "Concept"
-          ]
-        },
-        "id": {
-          "type": "string",
-          "format": "uri"
-        },
-        "inScheme": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string",
-              "enum": [
-                "http://purl.org/dcx/lrmi-vocabs/interactivityType/"
-              ]
-            }
-          }
-        }
-      }
+      "format": "uri"
     }
   }
 }
