@@ -100,7 +100,12 @@
               }
             }
           }
-      }
+      },
+      "required":  [
+        "inScheme",
+        "id",
+        "type"
+      ]
     },
       "_widget": "SkohubLookup"
     },
