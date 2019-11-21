@@ -33,7 +33,10 @@
     },
     "name": {
       "title": "Title",
-      "type": "string"
+      "type": "string",
+      "_display": {
+        "rows": 2
+      }
     },
     "creator": {
       "title": "Creator(s)",
@@ -107,34 +110,6 @@
           "type"
         ],
         "_widget": "SkohubLookup"
-      }
-    },
-    "educationalLevel": {
-      "title": "Educational Level",
-      "type": "object",
-      "_widget": "SkohubLookup",
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "Concept"
-          ]
-        },
-        "id": {
-          "type": "string",
-          "format": "uri"
-        },
-        "inScheme": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string",
-              "enum": [
-                "https://oerworldmap.org/assets/json/sectors/"
-              ]
-            }
-          }
-        }
       }
     },
     "license": {
