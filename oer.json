@@ -35,7 +35,7 @@
       "title": "Title",
       "type": "string",
       "_display": {
-        "rows": 3
+        "rows": 2
       }
     },
     "creator": {
@@ -64,7 +64,6 @@
         },
         "required": [
           "name",
-          "id",
           "type"
         ]
       }
@@ -145,5 +144,9 @@
       "type": "string",
       "format": "uri"
     }
-  }
+    ]
+  },
+  "required":  [
+    "id",
+    "name"
 }
