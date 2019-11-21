@@ -144,9 +144,9 @@
       "type": "string",
       "format": "uri"
     }
-    ]
   },
   "required":  [
     "id",
     "name"
+  ]
 }
