@@ -97,7 +97,7 @@
               "id": {
                 "type": "string",
                 "enum": [
-                  "https://w3id.org/class/hochschulfaechersystematik/scheme"
+                  "https://w3id.org/class/esc/scheme"
                 ]
               }
             }
